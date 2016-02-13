@@ -50,7 +50,9 @@ table {
 
 
 /*---------------------------------------------------------*/
+/*body為選擇器、background-color是屬性、gray為屬性值*/
 body {
+    background-color:gray;
 }
 
 
