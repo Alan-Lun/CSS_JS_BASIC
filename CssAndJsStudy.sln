@@ -3,26 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CssAndJsStudy", "E:\CssAndJsStudy\", "{6DD72311-4533-41B7-A54A-8677568375AF}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CssAndJsStudy(1)", "CssAndJsStudy\", "{7D472AD1-597B-4AC6-A678-7586C688ADAC}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_2094"
-		Debug.AspNetCompiler.PhysicalPath = "E:\CssAndJsStudy\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2094\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2290"
+		Debug.AspNetCompiler.PhysicalPath = "CssAndJsStudy\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2290\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_2094"
-		Release.AspNetCompiler.PhysicalPath = "E:\CssAndJsStudy\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2094\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2290"
+		Release.AspNetCompiler.PhysicalPath = "CssAndJsStudy\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2290\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "2094"
-		SlnRelativePath = "E:\CssAndJsStudy\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "2290"
+		SlnRelativePath = "CssAndJsStudy\"
 	EndProjectSection
 EndProject
 Global
@@ -30,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6DD72311-4533-41B7-A54A-8677568375AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DD72311-4533-41B7-A54A-8677568375AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D472AD1-597B-4AC6-A678-7586C688ADAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D472AD1-597B-4AC6-A678-7586C688ADAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
