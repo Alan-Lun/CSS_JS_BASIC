@@ -51,10 +51,12 @@ table {
 
 /*---------------------------------------------------------*/
 /*body為選擇器、background-color是屬性、gray為屬性值*/
+/*url為所謂的函式，最少需要一個參數*/
 body {
     background-color:gray;
+/*這樣子寫完之後會發生覆蓋了整個頁面，因為背景影像預設會重複排列，所以會徹底蓋滿*/
+    background-image:url("../../image/../../image/img01.png");
 }
-
 
 /*可以使用這個指定媒體樣式，此為印刷時的*/
 /*@media print
