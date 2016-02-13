@@ -67,3 +67,190 @@ body {
 {
 
 }*/
+
+/*---------------------------------------------------------------*/
+
+/*選擇器介紹*/
+/*要注意有優先權問題，選取到的範圍越大，優先權越小*/
+/*另外相同的名稱 例如有兩個nav的css，永遠會以後者為主*/
+/*通用選擇器*/
+/*使每個元素都套用此，不過還不如此套用到body就好，且速度會比較快*/
+*{
+    color:black;
+}
+
+/*類型選擇器，也可以說是標籤選擇器*/
+h1{
+    font-weight:bold;
+}
+
+/*id選擇器，網頁上唯一的選擇器*/
+#main{
+    background-color:white;
+}
+
+/*class選擇器，撰寫用途在於模塊化。可以寫出共用的，就可以使用他，class是可以重複使用不像id只能選其一*/
+.button{
+    background-color:hotpink;
+    color:white;
+}
+
+/*群組選擇器，將多個選擇器組合起來共用*/
+h3,h4{
+    font-weight:bold;
+}
+
+/* ※組合選擇器 */
+
+/*後代選擇器 這個元素的全部後代，只要符合得全部都套上，適合用在包在此元素內的樣式*/
+div h2{
+    color:green;
+}
+
+/*子選擇器，只會到這元素為止，後面的包含的後代就不會再產生*/
+aside > h2{
+    font-weight:bold;
+    color:red;
+}
+
+/* 兄弟選擇器 */
+/*要注意在同層父元素*/
+
+/*相鄰兄弟選擇器，只會替在這個之後的指定元素做改變。*/
+/*也可以替擁有相同覆元素且彼此相鄰接的元素套用樣式*/
+
+h5 + .offer {
+    color:yellow;
+}
+
+.brother1 + .brother2{
+    background-color:green;
+}
+
+/*一般兄弟選擇器，凡是在此指定元素之後的h5，但是要同層父元素*/
+
+#normalbrotherId ~ .normalbrother{
+    color:chocolate;
+    
+} 
+
+/*屬性選擇器可以選擇目前此元素上有的屬性，也可以設定多個屬性條件*/
+input[type="email"],input[type="number"]{
+    border:none;
+    border-radius:10px;
+}
+
+input[type="text"][class="btnattr"]{
+    border:dotted;
+}
+
+/* 虛擬類別，不是以實際的元素構成，無法用一般選擇器選取 */
+
+/*動態虛擬類別，元素與使用者互動時所套用的樣式*/
+
+/*連結的*/
+a:link{
+    text-decoration:underline;
+}
+/*移動到此*/
+a:hover{
+    text-decoration:none;
+}
+/*已經被拜訪過連結*/
+a:visited{
+    color:black;
+}
+/*被按下時*/
+a:active{
+    color:red;
+}
+/*比如當某個文字欄位被點選時候所作的變化*/
+a:focus{
+/*outline是在做無障礙性使用的*/
+    outline-color:black;
+    outline-style:dotted;
+    outline-width:1px;
+}
+
+/*也可以設定多個*/
+/*被造訪過且現在被按的*/
+a:visited:active{
+    color:orange;
+}
+
+/*結構性虛擬類別*/
+/*這可以找出指定條件下的元素並且第幾個要套用此元素*/
+/*這是條件下的li第一個*/
+#Structural>li:nth-child(1){
+    background-color:lightblue;
+}
+/*這是條件下的li最後一個*/
+#Structural>li:nth-last-child(1){
+    background-color:brown;
+}
+
+/*空元素*/
+/*.liempty:empty{
+    background-color:green;
+}*/
+
+/*網頁的根元素，最常見的根元素為html*/
+
+/*目標虛擬類別*/
+/*可用於back to top ，當你點擊此連結時，會跳到該連結位置*/
+:target{
+    color:red;
+}
+
+
+/*使用者介面元素狀態虛擬類別*/
+/* :enabled和:disabled */
+/*停用時以及啟用時所套用的樣式*/
+:disabled{
+    background-color:blue;
+}
+/*被勾選的狀態*/
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+} 
+
+/*語言虛擬類別*/
+/*根據元素選擇的語言來設定樣式*/
+:lang(en)
+{
+    color:blueviolet;
+}
+
+/*否定虛擬類別*/
+/*可挑選出不符合其參數條件的元素套用此樣式*/
+/*:not(:lang(en))
+{
+    color:greenyellow;
+}*/
+
+/*虛擬元素*/
+/*選取第一航文字所套用的樣式*/
+/*p:first-line{
+    font-weight:800;
+}*/
+
+/*在某元素的前面或後面產生內容*/
+/*因為他非實體元素，不是html的一部分，所以可以運用做出很多事情且不用改變網頁結構*/
+/*由於虛擬元素無法在缺乏content屬性下運作，所以只要利用content:""，這樣就可以欺騙她顯示虛擬元素*/
+#ba p:before{
+    content:"\201C";
+}
+
+#ba p:after{
+    content:"\201D";
+}
+
+/*最高權限 !important規則 沒人可以改變他*/
+.error{
+    color:red !important;
+}

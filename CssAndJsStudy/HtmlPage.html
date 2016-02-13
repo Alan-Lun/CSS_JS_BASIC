@@ -11,14 +11,162 @@
     <link href="Css/Style.css" rel="stylesheet" />
 </head>
 <body>
-
+    <a href="#targetId">target連結移動</a>
     <!-- 繼承與元素間關係 -->
     <!-- body雖然沒有文字，但是他的裡面有包含了h1和p，h1和p是body的後代，也可稱之為子元素，傳承下來的屬性也可以由自己的屬性覆寫掉 -->
     <!-- 同時h1和p也是<div id="main" class="group">的子元素 -->
     <div id="main" class="group">
         <h1>test</h1>
+        <h2>後代選擇器</h2>
+        <aside>
+            <h2>子選擇器</h2>
+            <div>
+                <h2>123</h2>
+            </div>
+        </aside>
+        
+        <h3>
+            群組選擇器測試
+        </h3>
+        <h4>群組選擇器測試</h4>
         <p>this aaaaabbbb</p>
+        <input type="button" class="button" value="test" />
     </div>
-   
+
+    <!-- 相鄰兄弟選擇器 -->
+    <div id="selecterbrother">
+        <h5>123</h5>
+
+        <h5>456</h5>
+
+        <h5 class="offer">789</h5>
+
+    </div>
+
+  <hr />
+
+
+    <!-- 相鄰兄弟選擇器 -->
+    <ul class="brother1">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
+
+    <ul class="brother2">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
+
+    <ul class="brother2">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
+
+    <hr />
+    <!-- 一般兄弟選擇器 -->
+
+    <div id="normalbrotherId">
+        <h5 class="normalbrother">測試一般兄弟選擇器1</h5>
+        <h5 class="normalbrother">測試一般兄弟選擇器2</h5>
+        <h5 class="normalbrother">測試一般兄弟選擇器3</h5>
+     </div>
+    <h5 class="normalbrother">測試一般兄弟選擇器4</h5>
+    <h5 class="normalbrother">測試一般兄弟選擇器5</h5>
+    <div>
+        <h5 class="normalbrother">測試一般兄弟選擇器6</h5>
+    </div>
+
+    <hr />
+    <!-- 屬性選擇器 -->
+    <input type="email"  value=""/>
+    <input type="number" value="" />
+    <input type="text" class="btnattr" value="" />
+
+    <hr />
+
+    <a href="#">動態虛擬類別</a>
+
+    <!-- 結構性虛擬類別 -->
+    <ul id="Structural">
+        <li>結構性</li>
+        
+        <li>虛擬類別</li>
+        
+    </ul>
+    <hr />
+    <!-- 使用者介面元素狀態虛擬類別 -->
+    <input  type="text" disabled />
+    <input type="checkbox" id="checkclass" name="checkclass" />
+    <label for="checkclass">CSS is Awesome</label>
+
+    <hr />
+    <!-- 語言虛擬類別 -->
+    <p lang="en">abcdefg語言虛擬類別</p>
+    <p lang="fa">否定虛擬類別</p>
+
+    <hr />
+    <!--虛擬元素  -->
+    <p>今天天氣好</p>
+    <p>夕陽昏</p>
+
+    <aside id="ba">
+        <p>123123</p>
+
+
+    </aside>
+
+
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- 目標虛擬類別 -->
+    <p id="targetId">最上方的target移動到這地方</p>
+
+
 </body>
 </html>
